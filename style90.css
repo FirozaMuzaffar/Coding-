@@ -121,7 +121,6 @@ nav ul li a:hover {
   padding-left: 20px;
   list-style: decimal;
 }
-
 .menu {
   text-align: center;
   padding: 50px 0 20px;
@@ -129,6 +128,7 @@ nav ul li a:hover {
 
 .menu h1 {
   font-size: 3rem;
+  color: #333;
 }
 
 .menu h1 span {
@@ -184,6 +184,7 @@ nav ul li a:hover {
 .menu_info h2 {
   margin-bottom: 10px;
   font-size: 1.8rem;
+  color: #333;
 }
 
 .menu_info p {
@@ -208,6 +209,7 @@ nav ul li a:hover {
   border-radius: 5px;
   text-decoration: none;
   margin-top: 15px;
+  font-weight: bold;
 }
 
 .menu_btn:hover {
