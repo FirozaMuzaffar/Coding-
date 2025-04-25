@@ -2,167 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Food Website</title>
-  <link rel="stylesheet" href="style90.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
+  <title>Firoza's Movie Theater</title>
+  <link rel="stylesheet" href="style3.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    /* Styling for the video element */
+    #trailer {
+      width: 800px;
+      max-width: 100%; /* Ensures the video is responsive */
+      height: 450px;
+      max-height: 100%; /* Ensures the height adjusts based on screen size */
+      object-fit: cover; /* Makes the video scale and cover the box */
+    }
+  </style>
 </head>
 <body>
-  <!-- Home Section -->
-  <section id="Home">
-    <nav>
-      <div class="logo">
-        <img
-          src="https://marketplace.canva.com/EAFaFUz4aKo/3/0/1600w/canva-yellow-abstract-cooking-fire-free-logo-tn1zF-_cG9c.jpg"
-          alt="Logo"
-        />
-      </div>
-      <ul>
-        <li><a href="#Home"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li><a href="#About"><i class="fa-solid fa-circle-info"></i> About</a></li>
-        <li><a href="#Menu"><i class="fa-solid fa-utensils"></i> Menu</a></li>
-        <li><a href="#AddRecipe"><i class="fa-solid fa-cart-shopping"></i> Recipe</a></li>
-      </ul>
-    </nav>
 
-    <div class="main">
-      <div class="men_text">
-        <h1>Get fresh <span>Food</span><br />in an Easy way</h1>
-      </div>
-      <div class="main_image">
-        <img src="0d892451-cd94-45a0-b475-d02d5d1af554.jpg" alt="Main Food Image" />
-      </div>
-    </div>
-  </section>
+  <div class="banner">
+    <div class="marquee">🌟🎬 Welcome to Firoza's Movie Theater 🍿🎥</div>
 
-  <!-- About Section -->
-  <div class="about" id="About">
-    <div class="about_main">
-      <div class="image">
-        <img src="c43655e3-5174-424d-a11a-28258a880d27.jpg" alt="About Image" />
+    <section class="theater">
+      <video id="trailer" autoplay loop muted playsinline>
+        <source src="c:\Users\DELL\Desktop\assignment\Video1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="controls">
+        <h1>🎬 Firoza's Movie Theater 🎞️</h1>
+        <button onclick="document.getElementById('trailer').currentTime = 0">🔁 Play Again</button>
       </div>
-      <div class="about_text">
-        <h1><span>About</span> Us</h1>
-        <h3>Why Choose Us</h3>
-        <p>
-          Over its history as a food, the main uses of suger are in cooking, baking, desserts, 
-          as a spread on bread, as an addition to various beverages such as tea, and as a sweetener 
-          in some commercial beverages.
-        </p>
-
-        <!-- Unordered List -->
-        <ul>
-          <li>Fresh Ingredients</li>
-          <li>Quick Delivery</li>
-          <li>Affordable Prices</li>
-          <li>Variety of Menu Options</li>
-        </ul>
-
-        <!-- Ordered List -->
-        <h3>Our Goals</h3>
-        <ol>
-          <li>Provide the best food experience</li>
-          <li>Ensure customer satisfaction</li>
-          <li>Offer innovative recipes</li>
-          <li>Maintain quality at all times</li>
-        </ol>
-      </div>
-    </div>
+    </section>
   </div>
 
-  <!-- Menu Section -->
-<div class="menu">
-  <h1>Our Menu <span>Delicious Meals</span></h1>
-  <div class="menu_box">
-    <!-- Burger Card -->
-    <div class="menu_card">
-      <div class="menu_image">
-          <img src="https://nomoneynotime.com.au/uploads/recipes/shutterstock_257496871-1.jpg" alt="Burger" />
-      </div>
-      <div class="small_card">
-          <i class="fa-solid fa-heart"></i>
-      </div>
-      <div class="menu_info">
-          <h2>Burger</h2>
-          <p>Delicious burger with fresh ingredients and special sauce.</p>
-          <h3>$20.00</h3>
-          <div class="menu_icon">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-          </div>
-          <!-- Link to the recipe details page -->
-          <a href="burger.html" class="menu_btn">Order Now</a>
-      </div>
-    </div>
-
-    <!-- Kabab Card -->
-    <div class="menu_card">
-      <div class="menu_image">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3T47xAILBDnjWxnL492TfX_SbrKwvAxfz6A&s" alt="Kabab" />
-      </div>
-      <div class="small_card">
-          <i class="fa-solid fa-heart"></i>
-      </div>
-      <div class="menu_info">
-          <h2>Kabab</h2>
-          <p>Delicious kabab with fresh ingredients and special sauce.</p>
-          <h3>$20.00</h3>
-          <div class="menu_icon">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-          </div>
-          <!-- Link to the recipe details page -->
-          <a href="Kabab.htm" class="menu_btn">Order Now</a>
-      </div>
-    </div>
-
-    <!-- Pizza Card -->
-    <div class="menu_card">
-      <div class="menu_image">
-          <img src="https://images.ctfassets.net/j8tkpy1gjhi5/5OvVmigx6VIUsyoKz1EHUs/b8173b7dcfbd6da341ce11bcebfa86ea/Salami-pizza-hero.jpg" alt="Pizza" />
-      </div>
-      <div class="small_card">
-          <i class="fa-solid fa-heart"></i>
-      </div>
-      <div class="menu_info">
-          <h2>Pizza</h2>
-          <p>Delicious pizza with fresh ingredients and special sauce.</p>
-          <h3>$20.00</h3>
-          <div class="menu_icon">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-          </div>
-          <!-- Link to the recipe details page -->
-          <a href="Pizza.html" class="menu_btn">Order Now</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <!-- Add Recipe Section -->
-  <section class="add-recipe" id="AddRecipe">
-    <div class="container">
-      <h1><span>Add</span> Your Order</h1>
-      <form id="recipeForm">
-        <input type="text" id="Order Title" placeholder="Order Title" required>
-        <input type="text" id="recipeImage" placeholder="Image URL (optional)">
-        <textarea id="recipeDescription" placeholder="Order Description" required></textarea>
-        <button type="submit">Add Order</button>
-      </form>
-    </div>
-  </section>
 </body>
 </html>
