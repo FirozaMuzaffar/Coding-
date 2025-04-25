@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Firoza's Movie Theater</title>
+  <link rel="stylesheet" href="style3.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    /* Styling for the video element */
+    #trailer {
+      width: 800px;
+      max-width: 100%; /* Ensures the video is responsive */
+      height: 450px;
+      max-height: 100%; /* Ensures the height adjusts based on screen size */
+      object-fit: cover; /* Makes the video scale and cover the box */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <div class="marquee">🌟🎬 Welcome to Firoza's Movie Theater 🍿🎥</div>
+
+    <section class="theater">
+      <video id="trailer" autoplay loop muted playsinline>
+        <source src="c:\Users\DELL\Desktop\assignment\Video1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="controls">
+        <h1>🎬 Firoza's Movie Theater 🎞️</h1>
+        <button onclick="document.getElementById('trailer').currentTime = 0">🔁 Play Again</button>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
