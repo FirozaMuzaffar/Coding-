@@ -1,38 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Firoza's Movie Theater</title>
-  <link rel="stylesheet" href="style3.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spiritual Progress Tracker</title>
   <style>
-    /* Styling for the video element */
-    #trailer {
-      width: 800px;
-      max-width: 100%; /* Ensures the video is responsive */
-      height: 450px;
-      max-height: 100%; /* Ensures the height adjusts based on screen size */
-      object-fit: cover; /* Makes the video scale and cover the box */
+    body {
+      font-family: sans-serif;
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #dee2e6;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+    tfoot td {
+      font-weight: bold;
+      background-color: #d4edda;
+    }
+    .score {
+      font-weight: bold;
+      color: green;
     }
   </style>
 </head>
-<body>
+<body>  <h2>Spiritual Progress Tracker</h2>  <table id="progressTable">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>صبح</th>
+        <th>ظهر</th>
+        <th>عصر</th>
+        <th>شام</th>
+        <th>عشا</th>
+        <th>تلاوت یک صفحه</th>
+        <th>اذکار صبح و شام</th>
+        <th>سوره ملک</th>
+        <th>امور منزل</th>
+        <th>شنیدن صوتی</th>
+        <th>مطالعه پیشگام دوم</th>
+        <th>برداشت</th>
+        <th>سوره کهف</th>
+        <th>مجموع امتیاز</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Student 1</td>
+        <!-- 14 checkboxes -->
+        <td><input type="checkbox" class="activity"></td>
+        <td><input type="checkbox" class="activity"></td>
+        <td><input type="checkbox" class="activity"></td>
+        <td><input type="checkbox" class="activity"></td>
+        <td><input type="checkbox" class="activity"></td>
+        <td><input type="checkbox" class="activity"></td>
+        <td><input type="checkbox" class="activity"></td>
+        <td><input type="checkbox" class="activity"></td>
+        <td><input type="checkbox" class="activity"></td>
+        <td><input type="checkbox" class="activity"></td>
+        <td><input type="checkbox" class="activity"></td>
+        <td><input type="checkbox" class="activity"></td>
+        <td><input type="checkbox" class="activity"></td>
+        <td><span class="score">0%</span></td>
+      </tr>
+      <!-- You can duplicate this row for more students -->
+    </tbody>
+  </table>  <script>
+    const rows = document.querySelectorAll("#progressTable tbody tr");
+    rows.forEach(row => {
+      const checkboxes = row.querySelectorAll(".activity");
+      const scoreCell = row.querySelector(".score");
 
-  <div class="banner">
-    <div class="marquee">🌟🎬 Welcome to Firoza's Movie Theater 🍿🎥</div>
-
-    <section class="theater">
-      <video id="trailer" autoplay loop muted playsinline>
-        <source src="Video2.mp4" type="video/mp4" />
-       
-      </video>
-      <div class="controls">
-        <h1>🎬 Firoza's Movie Theater 🎞️</h1>
-        <button onclick="document.getElementById('trailer').currentTime = 0">🔁 Play Again</button>
-      </div>
-    </section>
-  </div>
-
-</body>
+      checkboxes.forEach(cb => {
+        cb.addEventListener('change', () => {
+          let checkedCount = 0;
+          checkboxes.forEach(c => { if (c.checked) checkedCount++; });
+          const percentage = Math.round((checkedCount / 14) * 100);
+          scoreCell.textContent = percentage + "%";
+        });
+      });
+    });
+  </script></body>
 </html>
