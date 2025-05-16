@@ -1,38 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Firoza's Movie Theater</title>
-  <link rel="stylesheet" href="style3.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
-  <style>
-    
-    #trailer {
-      width: 800px;
-      max-width: 100%; 
-      height: 450px;
-      max-height: 100%; 
-      object-fit: cover;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proverb</title>
+  <link rel="stylesheet" href="style5.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <div class="banner">
-    <div class="marquee">🌟🎬 Welcome to Firoza's Movie Theater 🍿🎥</div>
+  <!-- Navbar -->
+  <header>
+    <a href="#" class="logo"></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#famous">Famous Proverb</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
 
-    <section class="theater">
-      <video id="trailer" autoplay loop muted playsinline>
-        <source src="Video2.mp4" type="video/mp4" />
-       
-      </video>
-      <div class="controls">
-        <h1>🎬 Firoza's Movie Theater 🎞️</h1>
-        <button onclick="document.getElementById('trailer').currentTime = 0">🔁 Play Again</button>
+  <!-- Home Section -->
+  <section class="featured-box" id="home">
+    <div class="featured-text">
+      <div class="hello">
+        <p>Welcome to our shop of Proverbs</p>
       </div>
-    </section>
-  </div>
+      <div class="featured-name">
+       
+      </div>
+      <div class="featured-text-info">
+       
+        <a href="#contact" class="btn">Contact Us</a>
+      </div>
+      <div class="icons">
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+    </div>
 
-</body>
-</html>
+    <div class="featured-image">
+      <div class="image">
+        <img src="https://d4804za1f1gw.cloudfront.net/wp-content/uploads/sites/50/2018/11/hero.jpg" 
+        style="border-radius: 90rem; width: 300px; height: 300px;">
+      </div>
+    </div>
+  </section>
+
+
+<!-- Our Shop -->
+<section class="shop" id="shop">
+    <div class="middle-text">
+      <h4>Our Books</h4>
+      <h2>Let's Check Popular Production</h2>
+    </div>
+  
+    <div class="shop-content">
+      <!-- Product Card -->
+      <div class="row">
+        <h3>Afghan Proverbs</h3>
+        <p><b>Patience is bitter, but its fruit is sweet</b></p>
+        <div class="in-text">
+          <div class="price">
+            <h6>$21.00</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order now</a>
+          </div>
+        </div>
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart'></i></a>
+        </div>
+      </div>
+  
+      <!-- Copy more .row divs for additional products -->
+      <div class="row">
+        <h3>Zarbul Masalha</h3>
+        <p><b>A single flower does not make a spring</b></p>
+        <div class="in-text">
+          <div class="price">
+            <h6>$25.00</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order now</a>
+          </div>
+        </div>
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart'></i></a>
+        </div>
+      </div>
+  
+      <div class="row">
+        <h3>Organic Honey</h3>
+        <p>It is a long established fact that a reader.</p>
+        <div class="in-text">
+          <div class="price">
+            <h6>$25.00</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order now</a>
+          </div>
+        </div>
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart'></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <h3> Bahodine Majrouh</h3>
+        <p>He who has no shame, has no faith</p>
+        <div class="in-text">
+          <div class="price">
+            <h6>$25.00</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order now</a>
+          </div>
+        </div>
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart'></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <h3>Dari Proverbs</h3>
+        <p>Don’t show your teeth when you can’t bite</p>
+        <div class="in-text">
+          <div class="price">
+            <h6>$25.00</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order now</a>
+          </div>
+        </div>
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart'></i></a>
+        </div>
+      </div>
+  
+      <div class="row">
+        <h3> Reflection of Ancient </h3>
+        <p>A donkey carrying books is still a donkey.</p>
+        <div class="in-text">
+          <div class="price">
+            <h6>$25.00</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order now</a>
+          </div>
+        </div>
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart'></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <h3>Pashto Proverbs</h3>
+        <p>The wound of a sword will heal, but not that of the tongue.</p>
+        <div class="in-text">
+          <div class="price">
+            <h6>$25.00</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order now</a>
+          </div>
+        </div>
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart'></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <h3>Wisdom of the East</h3>
+        <p>You can’t clap with one hand</p>
+        <div class="in-text">
+          <div class="price">
+            <h6>$25.00</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order now</a>
+          </div>
+        </div>
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart'></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+        
+<!----reviews---->
+
+<section class="review" id="review">
+    <div class="middle-text">
+    <h4>famouse Proverb & Author</h4>
+    <h2>Clients Review About Our Food</h2>
+    </div>
+    <div class="review-content">
+    <div class="box">
+    <p>Majrouh includes this in Afghan Proverbs and Sayings to reflect the high value placed on women in Afghan families. 
+</p>
+    <div class="in-box">
+        <div class="bx-img">
+       <img src="https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?semt=ais_hybrid&w=740" 
+     style="width: 50px; height: 50px; border-radius: 30%;">
+        </div>
+        <div class="bxx-text">
+        <h4>Sayid Bahodine Majrouh</h4>
+        <div class="ratings">
+        <a href="#"><i class='bx bxs-star' ></i></a>
+        <a href="#"><i class='bx bxs-star' ></i></a>
+        <a href="#"><i class='bx bxs-star' ></i></a>
+        <a href="#"><i class='bx bxs-star' ></i></a>
+        <a href="#"><i class='bx bxs-star' ></i></a>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+  <div class="box">
+  <p>In Afghan Proverbs Illustrated, Edward Zellem includes this powerful proverb to express the Afghan belief in perseverance.</p>
+  <div class="in-box">
+  <div class="bx-img">
+  <img src="https://img.freepik.com/free-photo/portrait-young-handsome-man-jean-shirt-smiling-with-crossed-arms_176420-12083.jpg?semt=ais_hybrid&w=740" 
+     style="width: 50px; height: 50px; border-radius: 30%;">
+  </div>
+  <div class="bxx-text">
+  <h4>Edward Zellem</h4>
+  <div class="ratings">
+ <a href="#"><i class='bx bxs-star' ></i></a>
+ <a href="#"><i class='bx bxs-star' ></i></a>
+ <a href="#"><i class='bx bxs-star' ></i></a>
+ <a href="#"><i class='bx bxs-star' ></i></a>
+ <a href="#"><i class='bx bxs-star' ></i></a>
+ </div>
+</div>
+</div>
+</div>
+  
+<div class="box">
+<p>From Zarbul Masalha: 151 Afghan Dari Proverbs, Edward Zellem shows that one person or event cannot represent the whole. </p>
+                    <div class="in-box">
+                        <div class="bx-img">
+                          <img src="https://neweralive.na/wp-content/uploads/2024/06/lloyd-sikeba.jpg" 
+     style="width: 50px; height: 50px; border-radius: 30%;">
+                        </div>
+                        <div class="bxx-text">
+                        <h4>Sayid Bahodine Majrouh</h4>
+        
+                        <div class="ratings">
+                        <a href="#"><i class='bx bxs-star' ></i></a>
+                        <a href="#"><i class='bx bxs-star' ></i></a>
+                        <a href="#"><i class='bx bxs-star' ></i></a>
+                        <a href="#"><i class='bx bxs-star' ></i></a>
+                        <a href="#"><i class='bx bxs-star' ></i></a>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+
+                        <div class="box">
+                            <p>This proverb shows that lessons can come from unexpected places. No one knows everything, and sometimes even a foolish person.</p>
+                            <div class="in-box">
+                                <div class="bx-img">
+                                <img src="https://www.jamsadr.com/images/neutrals/person-donald-900x1080.jpg" 
+     style="width: 50px; height: 50px; border-radius: 30%;">
+                                </div>
+                                <div class="bxx-text">
+                                <h4>Pearls of Afghan Wisdom</h4>
+                            
+                                <div class="ratings">
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+
+                                <div class="box">
+                                    <p>This proverb teaches that although patience can be difficult, it leads to positive results. Zellem includes it in Zarbul Masalha.</p>
+                                    <div class="in-box">
+                                        <div class="bx-img">
+                                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJc3zLGd8RlEa0z-0TwqzoeXGjiZ_L25XVA&s" 
+     style="width: 50px; height: 50px; border-radius: 30%;">
+                                        </div>
+                                        <div class="bxx-text">
+                                        <h4> Edward Zellem</h4>
+                                  
+                                        <div class="ratings">
+                                        <a href="#"><i class='bx bxs-star' ></i></a>
+                                        <a href="#"><i class='bx bxs-star' ></i></a>
+                                        <a href="#"><i class='bx bxs-star' ></i></a>
+                                        <a href="#"><i class='bx bxs-star' ></i></a>
+                                        <a href="#"><i class='bx bxs-star' ></i></a>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+
+                                        <div class="box">
+                                            <p>Found in Afghan Proverbs and Sayings, this proverb emphasizes teamwork. It means success comes from cooperation.</p>
+                                            <div class="in-box">
+                                                <div class="bx-img">
+                                               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5iB1zY-OM0aoh3RIhLR_j94LlzNEBtXynTA&s" 
+     style="width: 50px; height: 50px; border-radius: 30%;">
+                                                </div>
+                                                <div class="bxx-text">
+                                                <h4>Sayid Bahodine Majrouh</h4>
+                                             
+                                                <div class="ratings">
+                                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </div>
+
+                                                <div class="box">
+                                                    <p>This proverb highlights the lasting pain of hurtful words. Physical wounds may recover, but emotional scars from speech can stay forever.
+</p>
+                                                    <div class="in-box">
+                                                        <div class="bx-img">
+                                                         <img src="https://www.tu-ilmenau.de/unionline/fileadmin/_processed_/0/0/csm_Person_Yury_Prof_Foto_AnLI_Footgrafie__2_.JPG_94f12fbf25.jpg" 
+     style="width: 50px; height: 50px; border-radius: 30%;">
+                                                        </div>
+                                                        <div class="bxx-text">
+                                                        <h4>Pashto Proverbs Collection</h4>
+                                                       
+                                                        <div class="ratings">
+                                                        <a href="#"><i class='bx bxs-star' ></i></a>
+                                                        <a href="#"><i class='bx bxs-star' ></i></a>
+                                                        <a href="#"><i class='bx bxs-star' ></i></a>
+                                                        <a href="#"><i class='bx bxs-star' ></i></a>
+                                                        <a href="#"><i class='bx bxs-star' ></i></a>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+
+                                                        <div class="box">
+                                                            <p>This saying shows that knowledge alone doesn't make someone wise. Without understanding and thought, education has no real value.
+</p>
+                                                            <div class="in-box">
+                                                                <div class="bx-img">
+                                                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqp8i7Iu2fr_FLmJMqlOS03V9rUgUFkvbIcw&s" 
+     style="width: 50px; height: 50px; border-radius: 30%;">
+                                                                </div>
+                                                                <div class="bxx-text">
+                                                                <h4>Reflection of Ancient Wisdom</h4>
+                                                             
+                                                                <div class="ratings">
+                                                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                                                <a href="#"><i class='bx bxs-star' ></i></a>
+                                                                </div>
+                                                                </div>
+                                                                </div>
+                                                                </div>
+                  
+    </div>
+    </section>
+
+        <section class="contact" id="contact">
+            <div class="middle-text">
+              <h4>Get in Touch</h4>
+              <h2>Contact Us</h2>
+            </div>
+          
+            <div class="contact-container">
+              <form action="#" method="post" class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message <i class='bx bx-send'></i></button>
+              </form>
+            </div>
+          </section>
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Discover timeless Afghan wisdom at our Proverb Shop – where culture, meaning, and tradition come together in every product</p>
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <div class="icons">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+</section>
+    
+    
+          
