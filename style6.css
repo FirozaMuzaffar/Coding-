@@ -296,61 +296,6 @@ span {
 }
 
 /*-----Services----*/
-.services {
-  padding: 0 40rem;
-  background-color: var(--bg-color); /* Dark background */
-  text-align: center;
-}
-
-.services .heading {
-  font-size: 4rem;
-  font-weight: 900;
-  color: white;
-  margin-bottom: 4rem;
-}
-
-.services .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2 , 1fr);
-  gap: 16px;
-  padding: 10px;
-  justify-items: center;
-}
-
-.service-box {
-  background-color: #00f7ff;
-  color: black;
-  height: auto;
-  width: 100%;
-  max-width: 500px;
-  border-radius: 2rem;
-  padding: 5rem 5rem;
-  border: 5px solid transparent;
-  transition: 0.4s ease-in-out;
-  cursor: pointer;
-}
-
-.service-box:hover {
-  background: white;
-  color: black;
-  border: 5px solid var(--main-color, #00f7ff);
-  transform: scale(1.03);
-}
-
-.service-info h4 {
-  font-size: 3rem;
-  font-weight: 800;
-}
-
-.service-info p {
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.6;
-  text-align: left;
-  max-height: 100px;
-  line-height: 1.7;
-  margin: auto;
-}
 
 /* Certificate Section */
 .certificate-section {
