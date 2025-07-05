@@ -1,38 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Firoza's Movie Theater</title>
-  <link rel="stylesheet" href="style3.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
-  <style>
-    /* Styling for the video element */
-    #trailer {
-      width: 800px;
-      max-width: 100%; /* Ensures the video is responsive */
-      height: 450px;
-      max-height: 100%; /* Ensures the height adjusts based on screen size */
-      object-fit: cover; /* Makes the video scale and cover the box */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auaf organization</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header class="header">
+        <nav role="navigation">
+            <a href="#"><img src="https://powercampus.auaf.edu.af/SelfService/Logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index3.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                   
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>AUAF organization</h1>
+            <p>Empowering future leaders through education and innovation.</p>
 
-  <div class="banner">
-    <div class="marquee">🌟🎬 Welcome to Firoza's Movie Theater 🍿🎥</div>
+        </div>
+    </header>
+    
+<section class="course" id="course">
+    <h1>Courses We Offer</h1>
+    
+    <div class="row">
+        <div class="course-col">
+            <h3>Digital Marketing</h3>
+            <p>Learn the fundamentals of digital marketing, including strategies to promote businesses online using SEO, social media, email marketing, and more.</p>
+        </div>
+        <div class="course-col">
+            <h3>Leadership Development</h3>
+            <p>Gain essential leadership skills to inspire teams, drive innovation, and become a powerful change-maker in your community or organization.</p>
+        </div>
+        <div class="course-col">
+            <h3>Entrepreneurial Thinking</h3>
+            <p>Explore innovative approaches to problem-solving and business development through entrepreneurial mindsets and real-world application.</p>
+        </div>
+    </div>
+</section>
 
-    <section class="theater">
-      <video id="trailer" autoplay loop muted playsinline>
-        <source src="c:\Users\DELL\Desktop\assignment\Video1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div class="controls">
-        <h1>🎬 Firoza's Movie Theater 🎞️</h1>
-        <button onclick="document.getElementById('trailer').currentTime = 0">🔁 Play Again</button>
-      </div>
-    </section>
-  </div>
+<!-- Updated Facilities Section -->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <div class="facilities-row">
+        <div class="facilities-col">
+            <img src="https://americanlibrariesmagazine.org/wp-content/uploads/2015/06/AUAF-Library-e1435702629322.jpg">
+            <h3>Resourceful Library</h3>
+            <p>Our library offers a wide range of digital and printed academic resources to support student learning and research.</p>
+        </div>
 
-</body>
-</html>
+        <div class="facilities-col">
+            <img src="https://media.licdn.com/dms/image/v2/D4E22AQE82qz58ipj9g/feedshare-shrink_800/B4EZQNaHnTGcAg-/0/1735391750140?e=2147483647&v=beta&t=kisjzYAvV5Rh2IDM454l21ZnAKyu71jdg8DjN9Zdeec">
+            <h3>Sports and Wellness</h3>
+            <p>We provide open space and sports facilities to encourage physical activity and well-being among students.</p>
+        </div>
+
+        <div class="facilities-col">
+            <img src="https://opensocietyuniversitynetwork.org/files/pr/main_news_image.php?id=20204">
+            <h3>Modern Classrooms</h3>
+            <p>AUAF classrooms are equipped with modern technology, offering a dynamic and interactive learning environment.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Updated Testimonials Section -->
+<section class="testimonials">
+    <h1>What Our Students Say</h1>
+    
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7AgAV4x794bIfD_d7vPjoRdKzKbiamiWAEjKySyfiWb5iEJpF6o6-4E7ylfRQL1sfbbk&usqp=CAU">
+            <div>
+                <p>“The Take The Lead 2.0 program helped me discover my leadership potential and apply it in real-life situations. It was a life-changing journey.”</p>
+                <h3>Sara</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+
+        <div class="testimonial-col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4cqkIe30MyJ651ev5e7PVTlFTglgTX9eSEg&s">
+            <div>
+                <p>“Being part of AUAF gave me confidence, strong communication skills, and clarity in my career path. I highly recommend it to every woman aiming to grow.”</p>
+                <h3>Sahar</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>  
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-----Call To Action-------->
+<section class="cta">
+    <h1>
+        Enroll for our Various Online class <br>
+        Anywhere around the world
+    </h1>
+    <a href="" class="hero-btn">contact Us</a>
+
+</section>
+
+<!-- Updated Footer Section -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>The American University of Afghanistan (AUAF) is dedicated to providing quality higher education and leadership development.</p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <div class="icons">
+        <i class="fas fa-home"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-solid fa-heart"></i> by Firoza Muzaffer</p>
+</section>
