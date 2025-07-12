@@ -9,6 +9,7 @@
 body {
   background-color: #F5F5F5 !important; /* Support/Muted Light Grey */
   color: #0B132B; /* Primary Dark */
+ 
 }
 
 /* Section 1 */
@@ -101,12 +102,28 @@ body {
   }
 }
 
-  /* About Us Page */
+/* Container and general layout */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px; /* Reduced padding for smaller screens */
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: #FFFFFF;
+  text-align: justify;
+}
+
+/* Left side with image and border */
 .about-left {
   position: relative;
   margin-right: 20px;
   z-index: 1;
+  flex: 1 1 300px; /* Grow and shrink with a min width */
+  max-width: 500px;
+  min-width: 280px;
 }
+
 .about-left::before {
   content: "";
   position: absolute;
@@ -118,53 +135,80 @@ body {
   border-radius: 20px;
   z-index: -1;
 }
+
 .about-img {
   width: 100%;
-  height: 100%;
+  height: auto; /* Keep aspect ratio */
   border-radius: 10px;
+  display: block;
 }
+
+/* Right side text content */
 .about-right {
   margin-left: 20px;
   padding: 20px 20px 20px 0;
+  flex: 1 1 300px;
+  max-width: 600px;
+  min-width: 280px;
+  box-sizing: border-box;
 }
+
+.text-content {
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  max-width: 100%;
+}
+
+/* Responsive adjustments */
 @media (max-width: 991px) {
+  .about-section {
+    flex-direction: column;
+    padding: 40px 15px;
+  }
+
+  .about-left,
   .about-right {
-    margin-top: 70px;
+    margin: 0;
+    max-width: 100%;
+    min-width: auto;
+    padding: 0;
+    flex: none;
+  }
+
+  .about-left::before {
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    width: 90%;
+  }
+
+  .about-right {
+    margin-top: 30px;
     padding-left: 0;
   }
 }
 
-/*------*/
-.about-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-  gap: 40px;
-  flex-wrap: wrap;
-  background-color: #FFFFFF;
-  text-align: justify;
-}
-.text-content {
-  font-family: "Times New Roman", Times, serif;
-  text-align: justify;
-  max-width: 500px;
-  flex: 1;
-}
-/* ✅ Media Query for Tablets and Smaller Devices */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .about-section {
-    flex-direction: column;
-    text-align: center;
+    padding: 30px 10px;
+    gap: 15px;
   }
 
-  .text-content {
-    text-align: center;
-    font-size: 16px;
-    padding: 0 10px;
+  .about-left::before {
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    width: 95%;
+    border-width: 3px;
+    border-radius: 15px;
+  }
+
+  .about-right {
+    padding: 0;
   }
 }
 
+/*-----*/
 .subtitle {
   color: #F4C542; /* Light Gold */
   font-size: 40px;
@@ -192,17 +236,20 @@ p {
   display: flex;
   gap: 40px;
   margin: 20px 0;
+  text-align: center;
 }
 
 .info h2 {
   color: #FFA500;
   font-size: 2rem;
   margin: 0;
+  text-align: center;
 }
 
 .info p {
   color: #FFFFFF;
-  font-size: 0.9rem;
+  font-size: 0.9rem; 
+  text-align: center;
 }
 
 .info span {
@@ -347,7 +394,7 @@ p {
 }
 
 /* Section 2 */
-/* Main Section Styles (Unchanged) */
+
 .hot-coffee h1 {
   font-family: "Times New Roman", Times, serif;
   margin-top: 50px;
@@ -356,7 +403,6 @@ p {
   color: #FFA500;
 }
 
-/*--------*/
 
 /* Footer */
 footer {
