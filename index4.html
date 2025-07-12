@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>POH Organization</title>
+
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style1.css" />
+  <script src="POH1.js" defer></script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --main-color: #38bdf8;
+      --second-bg-color: rgba(0, 0, 0, 0.8);
+      --text-color: #555;
+      --card-bg-color: rgba(56, 189, 248, 0.1);
+      --card-border-color: rgba(56, 189, 248, 0.3);
+    }
+    body { font-family: 'Poppins', sans-serif; }
+
+    .header {
+      min-height: 100vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://coral.ku.dk/pictures/projektbillede.jpeg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      padding-top: 80px;
+    }
+
+    .logo { width: 80px; height: 80px; }
+
+    .navbar {
+      background: #ffffff;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+    }
+
+    .nav-link { color: #333 !important; font-weight: 500; }
+    .nav-link:hover { color: var(--main-color) !important; }
+
+    .navbar-brand img { height: 45px; }
+
+    .content {
+      font-family: 'Neuton', serif;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+
+    .content h1 { font-size: 50px; font-weight: 900; margin-bottom: 30px; }
+    .blue-text { color: var(--main-color); }
+    .explore-btn {
+      text-decoration: none;
+      padding: 12px 30px;
+      background-color: #fff;
+      color: #333;
+      font-weight: bold;
+      border-radius: 25px;
+      font-size: 18px;
+      transition: 0.3s ease;
+    }
+    .explore-btn:hover { background-color: #ddd; }
+
+    .icons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .icons .fa-brands {
+      background-color: #fff;
+      color: #3c95fc;
+      padding: 12px;
+      border-radius: 50%;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .icons .fa-brands:hover {
+      background-color: #3c95fc;
+      color: #fff;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+<header class="header" id="home">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="11-removebg-preview (1).png" alt="Logo" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about-section">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#our-services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team Members</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact-section">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!---CONTENT SECTION-->
+  <div class="content">
+    <h1>Path <span class="blue-text">of</span> Hope Organization</h1>
+    <p>The (POH) is dedicated to providing quality higher education and leadership development.</p>
+    <div class="icons">
+      <a href="https://www.instagram.com/path_of_hope__organization_?igsh=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/path-of-hope-poh" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://chat.whatsapp.com/EyyBs0Fq0D2Fz4ebdNzKpd" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </div>
+</header>
+
+   <!-- About Start -->
+      <section class="about-section" id="about-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="about-left">
+                <div style="z-index: 999">
+                  <img
+                    src="13.jpg"
+                    alt="about image"
+                    class="about-img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ps-2">
+              <div class="about-right">
+                <h3 class="about-title"><span class="blue-text">About</span> <b>Us</b></h3>
+                <span class="about-subtitle">
+                  POH - organization offering a range of training programs to young Afghans, providing them with the resources to develop their skills.
+                </span>
+                <p class="about-detail">
+                 The POH, is committed to becoming a hub for excellence in youth development. The center aspires to empower the younger generation by offering comprehensive training modules that cover a spectrum of disciplines, ranging from professional skills to personal development. POH envisions a future where Afghanistan’s youth emerge not just as skilled professionals but as visionary leaders capable of navigating the complexities of a dynamic global landscape.
+                </p>
+
+</section>
+     
+      <!-- Our Services Start -->
+<section class="our-services-section" id="our-services">
+  <div class="container">
+    <div class="row">
+      <!-- Left Content -->
+      <div class="col-lg-6">
+        <div class="choose-left">
+          <span class="choose-us-title">
+            <b>Our</b> <span class="blue-text">Services</span>
+          </span>
+
+          <p class="choose-us-desc">
+            At Path of Hope (POH), we empower Afghan girls through quality education designed to address the real challenges they face. Our programs offer practical skills, strong mentorship, and a supportive environment for personal growth. By choosing us, you join a movement dedicated to building a brighter and more inclusive future.
+          </p>
+
+          <!-- Vision -->
+          <div class="choose-item">
+            <div class="choose-icon">
+              <i class="fa-solid fa-crosshairs" style="font-size: 30px; color: #fff;"></i>
+            </div>
+            <div class="choose-content">
+              <h5>POH <span class="blue-text">Vision</span></h5>
+              <p>
+                Our vision is to create a future where Afghan girls have equal access to education and opportunities in various fields. We aim to build a society where girls are empowered with skills to succeed in the global world. By offering specialised boot camps and training, we support them in breaking barriers and becoming leaders. POH envisions a generation of confident girls driving positive change in Afghanistan and beyond.
+              </p>
+            </div>
+          </div>
+
+          <!-- Mission -->
+          <div class="choose-item">
+            <div class="choose-icon">
+              <i class="fas fa-binoculars" style="font-size: 30px; color: #fff;"></i>
+            </div>
+            <div class="choose-content">
+              <h5>POH <span class="blue-text">Mission</span></h5>
+              <p>
+                Our mission is to empower Afghan youth, especially girls, through high-quality education in diverse disciplines. We focus on subjects like mathematics, computer science, languages, public speaking, and reading clubs. POH creates a supportive space where students learn from successful individuals through seminars and mentorship. We are committed to excellence, inclusivity, and developing strong, moral leaders for the future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-6">
+        <div class="choose-right">
+          <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwd29ya2luZyUyMG9uJTIwY29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D" alt="choose us image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Our Services End -->
+     
+     <!-- Course Section -->
+      <section class="courses" id="courses">
+      <h2><b>Our</b> <span class="blue-text">Courses</span></h2>
+      <div class="container">
+      <div class="service-box">
+      <i class="fa-solid fa-subscript"></i>
+      <h3>Mathematics</h3>
+      <p>Focusing on foundational and advanced concepts.</p>
+    </div>
+
+    <div class="service-box">
+     <i class="fa-solid fa-computer"></i>
+      <h3>Computer sciences Courses</h3>
+      <p>Covering essential skills in programming and technology.</p>
+    </div>
+
+    <div class="service-box">
+     <i class="fas fa-language"></i>
+      <h3>language programs</h3>
+      <p>Offering courses in English, Spanish, German, and French at various proficiency levels.</p>
+    </div>
+
+    <div class="service-box">
+      <i class="fas fa-desktop"></i>
+      <h3>Seminars with Successful Individuals</h3>
+      <p>Hosting talks and workshops led by accomplished figures from different fields to inspire students.</p>
+    </div>
+
+    <div class="service-box">
+      <i class="fas fa-camera"></i>
+      <h3>Boot Camps</h3>
+      <p>Providing intensive training sessions in specific subjects to enhance practical skills.</p>
+    </div>
+
+   
+  </div>
+</section>
+
+  <!-- team member -->
+   <section class="team" id="team">
+  <div class="section-title">
+    <h2><b>Our</b> <span class="blue-text">Team Members</span></h2>
+    <div class="underline"></div>
+    <p>Meet the people powering Path of Hope with passion and purpose.</p>
+  </div>
+
+  <div class="team-grid">
+    <!-- Member 1 -->
+    <div class="member">
+      <div class="teampic">
+        <img src="14.jpg" alt="Zohal Noori">
+      </div>
+      <div class="member-info">
+        <h4>Zohal Noori</h4>
+        <span>Founder</span>
+        <div class="underline small-line"></div>
+        <p>Zohal Noori is the founder of Path of Hope and a student of international relations at Lewis University. She has received ten scholarships to study at top U.S. universities and collaborates with over 13 organizations, including the UN and Rotaract. Passionate about education, she launched the organization to empower Afghan girls. In her free time, she enjoys reading and exploring diverse perspectives.
+</p>
+      </div>
+    </div>
+
+    <!-- Member 2 -->
+    <div class="member">
+      <div class="teampic">
+        <img src="18.jpg" alt="Nematullah Bayat">
+      </div>
+      <div class="member-info">
+        <h4>Nematullah Bayat</h4>
+        <span>Co-Founder</span>
+        <div class="underline small-line"></div>
+        <p>Nematullah Bayat is the co-founder of Path of Hope and a Master’s student in Water and Environmental Engineering in Germany. He speaks five languages and uses his global communication skills to support Afghan girls' access to education. His passion for learning and development aligns with the organization’s vision. He is committed to building a brighter, educated future for Afghan youth.</p>
+      </div>
+    </div>
+
+    <!-- Member 3 -->
+    <div class="member">
+      <div class="teampic">
+        <img src="17.jpg" alt="Nelofar Noori">
+      </div>
+      <div class="member-info">
+        <h4>Nelofar Noori</h4>
+        <span>Project Manager</span>
+        <div class="underline small-line"></div>
+        <p>Nelofar Noori is a pre-healthcare student in the U.S. and serves as Project Manager at POH. She helps shape the organization’s strategic direction and oversees training topics and planning. As a tutor at American River College, she supports immigrant students through academic and enrollment guidance. She is dedicated to humanitarian work, peace-building, and bridging educational gaps.</p>
+      </div>
+    </div>
+
+    <!-- Member 4 -->
+    <div class="member">
+      <div class="teampic">
+        <img src="15.jpg" alt="Zainab Noori">
+      </div>
+      <div class="member-info">
+        <h4>Zainab Noori</h4>
+        <span>Head of Communication</span>
+        <div class="underline small-line"></div>
+        <p>Zainab Noori is an Afghan international relations student living in Kabul and serves as Head of Communication at POH. She manages contact with trainers and organizes training programs. Zainab is deeply engaged in humanitarian efforts and enjoys connecting through books and nature. Her role helps ensure effective communication and smooth coordination within the organization.
+</p>
+      </div>
+    </div>
+
+    <!-- Member 5 -->
+    <div class="member">
+      <div class="teampic">
+        <img src="16.jpg" alt="Fatima Ebrahime">
+      </div>
+      <div class="member-info">
+        <h4>Aman Shah Kabiri </h4>
+        <span>Advisor</span>
+        <div class="underline small-line"></div>
+        <p>Aman Shah Kabiri is an advisor at POH, studying Computer Science at AUAF and Public Policy at Kabul University. He is a women’s rights activist and education advocate who supports girls through digital learning. His unique blend of technology and policy drives innovative change in Afghan education. He’s passionate about using knowledge to create lasting social impact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+  <!-- Location Section -->
+    <section class="location">
+        <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106856.19349387222!2d69.0702596!3d34.5260104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d16eb7af01c4c9%3A0xd7d3943cd5f2e0f3!2sKabul!5e0!3m2!1sen!2saf!4v1720272440853!5m2!1sen!2saf" 
+  width="600" 
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+    </section>
+
+    <section class="contact-section" id="contact-section">
+    <div class="contact-container">
+      <div class="contact-left">
+      </div>
+      <div class="contact-right">
+        <h1><span class="highlight"><span class="blue-text">Contact</span> <b>Us</b></h1>
+        <hr class="divider">
+        <p class="contact-text">
+         To explore more about our ongoing efforts and activities, scan the QR code or connect with us on social media.
+          <a href="sms:" class="phone"></a>
+        </p>
+        <img src="67.png" style="width: 300px;" alt="QR Code" class="qr-code">
+      </div>
+    </div>
+  </section>
+
+<!---footer--->
+<section class="footer">
+  <div class="footer-container">
+    <h4>Path of Hope (POH)</h4>
+    <p>
+      The Path of Hope (POH) is dedicated to providing quality higher Education
+      and leadership development.
+    </p>
+
+    <div class="icons">
+      <a href="https://www.instagram.com/path_of_hope__organization_?igsh=NTc4MTIwNjQ2YQ==" target="_blank">
+        <i class="fa-brands fa-square-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/path-of-hope-poh/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://chat.whatsapp.com/EyyBs0Fq0D2Fz4ebdNzKpd" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://twitter.com/" target="_blank">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+    </div>
+
+    <p class="contact-us">Contact us: <a href="mailto:info@pathofhope.org">info@pathofhope.org</a></p>
+    <p class="copyright">© 2025 Path of Hope. All Rights Reserved.</p>
+  </div>
+</section>
+
+<!-- Bootstrap 5 Bundle JS (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- All-in-One Custom JS -->
+<script>
+  // ======= Navbar Mobile Toggle =======
+  const menuIcon = document.getElementById('menu-icon');
+  const navLinks = document.getElementById('navLinks');
+  let menuOpen = false;
+
+  if (menuIcon && navLinks) {
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuOpen = !menuOpen;
+      menuIcon.textContent = menuOpen ? '✕' : '☰';
+    });
+  }
+
+  // ======= Smooth Scroll =======
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
+  // ======= Sticky Navbar =======
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+      navbar?.classList.add("scrolled");
+    } else {
+      navbar?.classList.remove("scrolled");
+    }
+  });
+
+  // ======= Reveal on Scroll (Section + Image Animation) =======
+  const reveals = document.querySelectorAll(".about-section, .our-services-section, .courses, .team, .contact-section, .about-img, .choose-right img");
+
+  function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+    reveals.forEach(section => {
+      const elementTop = section.getBoundingClientRect().top;
+      const elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        section.classList.add("active");
+      } else {
+        section.classList.remove("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll); // Trigger on page load too
+
+  // ======= Back to Top Button =======
+  const backToTopBtn = document.createElement("button");
+  backToTopBtn.innerHTML = "↑";
+  backToTopBtn.id = "backToTop";
+  backToTopBtn.style.cssText = `
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #38bdf8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+  `;
+  document.body.appendChild(backToTopBtn);
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+</body>
+</html>
