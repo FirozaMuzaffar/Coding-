@@ -1,289 +1,456 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Firoza Muzaffar Portfolio</title>
-  <link rel="stylesheet" href="style4.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firoza Pocket Classroom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link visually-hidden-focusable" href="#main-content">Skip to main content</a
+    >
 
-  <!-- Header -->
-  <header class="header">
-    <a href="#" class="logo">Firoza Muzaffer</a>
-    <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <nav
+      class="navbar navbar-expand-lg sticky-top"
+      role="navigation"
+      aria-label="Main navigation"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="nav-brand"
+          ><i class="bi bi-book-half" aria-hidden="true"></i>
+          <span>Pocket Classroom</span></a
+        >
 
-    <nav class="navbar" id="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#Certificate">Certificate</a>
-      <a href="#contact">Contact</a>
+        <ul
+          class="navbar-nav me-auto mb-2 mb-lg-0"
+          role="menubar"
+          aria-label="Primary"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              id="nav-library"
+              role="menuitem"
+              aria-current="false"
+              >Library</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              id="nav-author"
+              role="menuitem"
+              aria-current="false"
+              >Author</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              id="nav-learn"
+              tabindex="-1"
+              aria-disabled="true"
+              role="menuitem"
+              >Learn</a
+            >
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center">
+          <label
+            for="import-capsule-input"
+            class="btn btn-outline-secondary me-2 mb-0"
+            id="label-import"
+            role="button"
+          >
+            <i class="bi bi-upload" aria-hidden="true"></i> <span>Import</span>
+          </label>
+          <input
+            type="file"
+            id="import-capsule-input"
+            accept=".json"
+            class="visually-hidden"
+            aria-labelledby="label-import"
+          />
+
+          <button
+            class="btn btn-outline-secondary"
+            id="btn-theme-toggle"
+            title="Toggle Theme"
+            aria-pressed="false"
+            aria-label="Toggle theme"
+          >
+            <i class="bi bi-sun-fill" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
     </nav>
-  </header>
 
+    <!-- Accessible live region for screen reader announcements -->
+    <div
+      id="a11y-live"
+      class="visually-hidden"
+      aria-live="polite"
+      aria-atomic="true"
+    ></div>
 
+    <!-- Visual alert container for user feedback -->
+    <div
+      id="app-alerts"
+      class="position-fixed top-0 end-0 p-3"
+      style="z-index: 1080; pointer-events: none"
+    ></div>
 
-<!-- home section design -->
-<section class="home" id="home">
-
-  <div class="home-content">
-    <h1>Hi, I'm <span>Firoza</span></h1>
-
-    <div class="text-animate">
-      <h3>Frontend Developer</h3>
-    </div>
-
-    <p>
-      My name is Firoza Muzaffar, and I am originally from Mazar-e-Sharif, Afghanistan.
-      I am currently pursuing my undergraduate studies at the American University of Afghanistan,
-      where I am deeply passionate about software engineering, with a focus on coding,
-      web design, and software development.
-    </p>
-
-    <div class="btn-box">
-      <a href="#" class="btn">Hire Me</a>
-      <a href="#" class="btn">Let's Talk</a>
-    </div>
-  </div>
-
-    <div class="icons">
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-square-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
-    </div>
-</section>
-
-
-<!-- Education Section Design -->
-
-<section class="education" id="education">
-  <h2 class="heading">My <span>Journey</span></h2>
-
-  <div class="education-row">
-    <!-- Education Column -->
-    <div class="education-column">
-      <h3 class="title">Education</h3>
-
-      <div class="education-box">
-        <div class="education-content">
-          <div class="content">
-            <div class="year"><i class="fa-solid fa-calendar-days"></i> 2022-2023</div>
-            <h3>High School Diploma – Ofoq-e-Roshan School</h3>
-            <p>Completed with distinction, focusing on science subjects including biology, chemistry, and mathematics.</p>
+    <main id="main-content" class="container mt-4 mb-5" role="main">
+      <section id="view-library" class="view" aria-label="Library view">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="h3 mb-0">Library</h2>
+          <div>
+            <button class="btn btn-primary" id="btn-new-capsule">
+              <i class="bi bi-plus-lg" aria-hidden="true"></i> New Capsule
+            </button>
           </div>
         </div>
-        <div class="education-content">
-          <div class="content">
-            <div class="year"><i class="fa-solid fa-calendar-days"></i> 2023-2024</div>
-            <h3>English Language Program</h3>
-            <p>Gained strong foundational skills in academic English, writing, and communication.</p>
-          </div>
+        <div id="capsule-grid" class="row g-4"></div>
+        <div id="library-empty-state" class="text-center p-5 d-none">
+          <h3>Your library is empty.</h3>
+          <p class="text-muted">
+            Create a new capsule or import one to get started.
+          </p>
+          <p>
+            <button class="btn btn-primary mt-3" id="btn-new-capsule-empty">
+              Create New Capsule
+            </button>
+          </p>
         </div>
-        <div class="education-content">
-          <div class="content">
-            <div class="year"><i class="fa-solid fa-calendar-days"></i> 2024-2025</div>
-            <h3>Undergraduate Program – AUAF</h3>
-            <p>Currently pursuing a degree in Software Engineering with coursework in web development, databases, and programming.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Experience Column -->
-    <div class="education-column">
-      <h3 class="title">Experience</h3>
+      <section id="view-author" class="view" aria-labelledby="author-heading">
+        <h2 id="author-heading" class="mb-4">Create New Capsule</h2>
+  <form id="author-form" novalidate>
+          <input type="hidden" id="capsule-id" />
 
-      <div class="education-box">
-        <div class="education-content">
-          <div class="content">
-            <div class="year"><i class="fa-solid fa-calendar-days"></i> 2023-2024</div>
-            <h3>English Instructor – Educational Center</h3>
-            <p>Designed lesson plans and taught English with a focus on practical usage, including academic writing and speaking to help students enhance their communication and presentation skills.</p>
-          </div>
-        </div>
-        <div class="education-content">
-          <div class="content">
-            <div class="year"><i class="fa-solid fa-calendar-days"></i> 2024-2025</div>
-            <h3>Computer Instructor – Training Institute</h3>
-            <p>Conducted classes on IT skills, Microsoft Word, Excel, PowerPoint, as well as web development fundamentals including HTML, CSS, and Bootstrap.</p>
-          </div>
-        </div>
-        <div class="education-content">
-          <div class="content">
-            <div class="year"><i class="fa-solid fa-calendar-days"></i>2025</div>
-            <h3>Volunteer – Community Education Programs</h3>
-            <p>Assisted in teaching, mentoring, and organizing educational workshops for underserved students.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Skills Section -->
-<section class="skills" id="skills">
-    <h2 class="heading">My <span>Skills</span></h2>
-
-    <div class="skills-row">
-        <!-- Coding Skills Column -->
-        <div class="skills-column">
-            <h3 class="title">Coding Skills</h3>
-            <div class="skills-box">
-                <div class="skills-content">
-                    <div class="progress">
-                        <h3>HTML <span>90%</span></h3>
-                        <div class="bar"><span style="width: 90%;"></span></div>
-                    </div>
-
-                    <div class="progress">
-                        <h3>CSS <span>85%</span></h3>
-                        <div class="bar"><span style="width: 70%;"></span></div>
-                    </div>
-
-                    <div class="progress">
-                        <h3>JavaScript <span>70%</span></h3>
-                        <div class="bar"><span style="width: 50%;"></span></div>
-                    </div>
-
-                    <div class="progress">
-                        <h3>Python <span>50%</span></h3>
-                        <div class="bar"><span style="width: 30%;"></span></div>
-                    </div>
+          <div class="card mb-3">
+            <div class="card-header">Metadata</div>
+            <div class="card-body">
+              <div class="mb-3">
+                <label for="meta-title" class="form-label"
+                  >Title <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="meta-title"
+                  required
+                  aria-required="true"
+                />
+                <div class="invalid-feedback">Title is required.</div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label for="meta-subject" class="form-label"
+                    >Subject<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="meta-subject"
+                    required
+                    aria-required="true"
+                  />
+                  <div class="invalid-feedback">Subject is required.</div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Professional Skills Column -->
-        <div class="skills-column">
-            <h3 class="title">Professional Skills</h3>
-            <div class="skills-box">
-                <div class="skills-content">
-                    <div class="progress">
-                        <h3>Communication <span>100%</span></h3>
-                        <div class="bar"><span style="width: 85%;"></span></div>
-                    </div>
-
-                    <div class="progress">
-                        <h3>Teamwork <span>95%</span></h3>
-                        <div class="bar"><span style="width: 75%;"></span></div>
-                    </div>
-
-                    <div class="progress">
-                        <h3>Creativity <span>85%</span></h3>
-                        <div class="bar"><span style="width: 65%;"></span></div>
-                    </div>
-
-                    <div class="progress">
-                        <h3>Problem Solving <span>70%</span></h3>
-                        <div class="bar"><span style="width: 60%;"></span></div>
-                    </div>
+                <div class="col-md-6">
+                  <label for="meta-level" class="form-label"
+                    >Level<span class="text-danger">*</span></label
+                  >
+                  <select
+                    id="meta-level"
+                    class="form-select"
+                    required
+                    aria-required="true"
+                  >
+                    <option value="">Select level</option>
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a level.</div>
                 </div>
+              </div>
+              <div class="mb-3">
+                <label for="meta-description" class="form-label"
+                  >Short Description<span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="meta-description"
+                  placeholder="One-line description of this capsule"
+                  required
+                  aria-required="true"
+                />
+                <div class="invalid-feedback">Description is required.</div>
+              </div>
             </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-header">Notes</div>
+            <div class="card-body">
+              <textarea
+                class="form-control"
+                id="notes-content"
+                rows="8"
+                placeholder="Add your notes here..."
+                aria-label="Notes content"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-header">Flashcards</div>
+            <div class="card-body" id="flashcards-container"></div>
+            <div class="card-footer">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-secondary"
+                id="btn-add-flashcard"
+              >
+                <i class="bi bi-plus-lg"></i> Add Flashcard
+              </button>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-header">Quiz Questions</div>
+            <div class="card-body" id="quiz-container"></div>
+            <div class="card-footer">
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-secondary"
+                id="btn-add-quiz-question"
+              >
+                <i class="bi bi-plus-lg"></i> Add Quiz Question
+              </button>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end my-4">
+            <button
+              type="button"
+              class="btn btn-secondary me-2"
+              id="btn-cancel-author"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary" id="btn-save-capsule">
+              <i class="bi bi-save" aria-hidden="true"></i>
+              <span>Save Capsule</span>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section id="view-learn" class="view" aria-label="Learn view">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 id="learn-capsule-title"></h2>
+          <button class="btn btn-sm btn-secondary" id="btn-back-to-library">
+            <i class="bi bi-arrow-left"></i> Back to Library
+          </button>
         </div>
-    </div>
-</section>
 
-<!-- Certificate Section -->
-<section class="certificate-section" id="Certificate">
-   <h2 class="heading">My <span>Certificate</span></h2>
-  <div class="certificate-row">
+        <ul
+          class="nav nav-tabs mt-3"
+          id="learn-tabs"
+          role="tablist"
+          aria-label="Learning tabs"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab-notes"
+              data-bs-toggle="tab"
+              data-bs-target="#panel-notes"
+              type="button"
+              role="tab"
+            >
+              Notes
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab-flashcards"
+              data-bs-toggle="tab"
+              data-bs-target="#panel-flashcards"
+              type="button"
+              role="tab"
+            >
+              Flashcards
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab-quiz"
+              data-bs-toggle="tab"
+              data-bs-target="#panel-quiz"
+              type="button"
+              role="tab"
+            >
+              Quiz
+            </button>
+          </li>
+        </ul>
 
-    <div class="certificate-col">
-      <img src="TTS.jpg" alt="Leadership Course">
-      <h3>TTS Program </h3>
-    </div>
+        <div class="tab-content pt-4" id="learn-tab-content">
+          <div class="tab-pane fade" id="panel-notes" role="tabpanel">
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-search"></i></span
+              ><input
+                type="search"
+                class="form-control"
+                placeholder="Search notes..."
+                id="notes-search-input"
+              />
+            </div>
+            <div
+              id="notes-render-area"
+              class="p-3 rounded notes-render-area"
+              tabindex="0"
+              aria-live="polite"
+            ></div>
+          </div>
 
-    <div class="certificate-col">
-      <img src="CODING.jpg" alt="Generative AI for Everyone">
-      <h3>Introduction to coding</h3>
-    </div>
+          <div class="tab-pane fade" id="panel-flashcards" role="tabpanel">
+            <div
+              id="flashcard-ui-wrapper"
+              class="mx-auto flashcard-wrapper"
+              aria-live="polite"
+            >
+              <div class="flashcard-container mb-3">
+                <div class="flashcard" id="flashcard">
+                  <div class="flashcard-front"></div>
+                  <div class="flashcard-back"></div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button
+                  class="btn btn-outline-secondary"
+                  id="flashcard-prev"
+                  title="Previous Card ([)"
+                  aria-label="Previous card"
+                >
+                  <i class="bi bi-arrow-left-circle" aria-hidden="true"></i>
+                </button>
+                <div class="text-center">
+                  <button
+                    class="btn btn-primary px-4"
+                    id="flashcard-flip"
+                    title="Flip Card (Spacebar)"
+                    aria-label="Flip flashcard"
+                  >
+                    Flip
+                  </button>
+                  <div class="mt-2 text-muted" id="flashcard-counter"></div>
+                </div>
+                <button
+                  class="btn btn-outline-secondary"
+                  id="flashcard-next"
+                  title="Next Card (])"
+                  aria-label="Next card"
+                >
+                  <i class="bi bi-arrow-right-circle" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="text-center mt-3 pt-3 border-top">
+                <div class="d-flex justify-content-center gap-2">
+                  <button
+                    class="btn btn-outline-success"
+                    id="flashcard-mark-known"
+                    aria-label="Mark as known"
+                  >
+                    <i class="bi bi-check-circle" aria-hidden="true"></i>
+                    <span>I Knew This</span>
+                  </button>
+                  <button
+                    class="btn btn-unknown"
+                    id="flashcard-mark-unknown"
+                    aria-label="Mark as unknown"
+                  >
+                    <i class="bi bi-x-circle" aria-hidden="true"></i>
+                    <span>I Didn't Know</span>
+                  </button>
+                </div>
+                <div
+                  id="flashcard-progress"
+                  class="mt-2 text-muted small"
+                  aria-hidden="true"
+                ></div>
+              </div>
+            </div>
+            <div id="flashcards-empty-state" class="text-center p-5 d-none">
+              No flashcards in this capsule.
+            </div>
+          </div>
 
-    <div class="certificate-col">
-      <img src="WEB.jpg" alt="Career Exploration">
-      <h3>Web design </h3>
-    </div>
+          <div class="tab-pane fade" id="panel-quiz" role="tabpanel">
+            <div id="quiz-ui-wrapper">
+              <div class="d-flex justify-content-between align-items-center">
+                <h4 id="quiz-question-text"></h4>
+                <span
+                  id="quiz-progress"
+                  class="badge bg-secondary h-100"
+                ></span>
+              </div>
+              <div id="quiz-options-container" class="list-group mt-3"></div>
+              <div id="quiz-feedback" class="mt-3 alert d-none"></div>
+              <div class="text-end mt-3">
+                <button class="btn btn-primary d-none" id="quiz-next-btn">
+                  Next
+                </button>
+              </div>
+            </div>
+            <div id="quiz-results-wrapper" class="d-none text-center p-4 card">
+              <h3>Quiz Complete!</h3>
+              <p class="fs-4">
+                Your Score: <strong id="quiz-final-score"></strong>
+              </p>
+              <p class="text-muted">
+                Best Score: <strong id="quiz-best-score"></strong>
+              </p>
+              <button
+                class="btn btn-sm btn-secondary mt-3"
+                id="quiz-restart-btn"
+              >
+                Try Again
+              </button>
+            </div>
+            <div id="quiz-empty-state" class="text-center p-5 d-none">
+              No quiz in this capsule.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <div class="certificate-col">
-      <img src="C C.jpg" alt="Certificate of Completion">
-      <h3>Certificate of Completion</h3>
-    </div>
-
-    <div class="certificate-col">
-      <img src="ILETS.jpg" alt="Introduction to Coding">
-      <h3>IELTS Preparation </h3>
-    </div>
-
-    <div class="certificate-col">
-      <img src="writing.jpg" alt="JavaScript Basics">
-      <h3>writing Competition</h3>
-    </div>
-
-  </div>
-</section>
-
-<!---contact section-->
-<section class="contact" id="contact">
-  <h2 class="heading">Contact <span>Me</span></h2>
-  <form action="#">
-    <div class="form-row">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Full Name" required />
-      </div>
-      <div class="form-group">
-        <input type="email" class="form-control" placeholder="Email" required />
-      </div>
-      <div class="form-group">
-        <input type="number" class="form-control" placeholder="Phone Number" required />
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Subject" />
-      </div>
-      <div class="form-group full-width">
-        <textarea class="form-control" rows="6" placeholder="Your Message" required></textarea>
-      </div>
-      <div class="form-group full-width text-center">
-        <input type="submit" value="Send Message" class="btn" />
-      </div>
-    </div>
-  </form>
-</section>
-
-<!-- Link to Boxicons -->
-<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-
-<!-- Footer Section -->
-<footer class="footer">
-  <!-- Social Icons -->
-  <div class="social">
-    <a href="#"><i class='bx bxl-linkedin'></i></a>
-    <a href="#"><i class='bx bxl-github'></i></a>
-    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-    <a href="#"><i class='bx bxl-twitter'></i></a>
-  </div>
-
-  <!-- Navigation Links -->
-  <ul class="footer-nav">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</footer>
-
-  <!-- JavaScript for menu toggle -->
-  <script>
-    const menuIcon = document.getElementById('menu-icon');
-    const navbar = document.getElementById('navbar');
-
-    menuIcon.onclick = () => {
-      navbar.classList.toggle('active');
-    };
-  </script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
